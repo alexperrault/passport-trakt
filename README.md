@@ -71,5 +71,5 @@ For a complete, working example, refer to the [login example](https://github.com
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2015 Alexandre Perrault <[http://perrau.lt/](http://perrau.lt/)>
+Copyright (c) 2015 Alexandre Perrault <[http://www.perrau.lt/](http://www.perrau.lt/)>
 
