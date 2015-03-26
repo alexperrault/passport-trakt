@@ -1,0 +1,16 @@
+{
+  "name": "passport-trakt-examples-login",
+  "version": "1.0.0",
+  "description": "Complete and working example using Trakt authentication strategy.",
+  "author": {
+    "name": "Alexandre Perrault",
+    "email": "alex.perrault@gmail.com",
+    "url": "http://www.perrau.lt/"
+  },
+  "dependencies": {
+    "express": "2.5.8",
+    "ejs": ">= 0.0.0",
+    "passport": ">= 0.0.0",
+    "passport-trakt": ">= 0.0.0"
+  }
+}
