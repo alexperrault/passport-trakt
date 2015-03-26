@@ -1,0 +1,47 @@
+{
+  "name": "passport-trakt",
+  "version": "1.0.0",
+  "description": "Trakt authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "trakt",
+    "auth",
+    "authn",
+    "oauth",
+    "authentication",
+    "identity"
+  ],
+  "author": {
+    "name": "Alexandre Perrault",
+    "email": "alex.perrault@gmail.com",
+    "url": "http://www.perrau.lt/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/alexperrault/passport-trakt.git"
+  },
+  "bugs": {
+    "url": "http://github.com/alexperrault/passport-trakt/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "pkginfo": "0.3.x",
+    "passport-oauth2": "1.x.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
