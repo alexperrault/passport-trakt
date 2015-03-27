@@ -3,6 +3,12 @@
 [Passport](http://passportjs.org/) strategy for authenticating with [Trakt](http://trakt.tv/)
 using the OAuth 2.0 API.
 
+[![build status](https://img.shields.io/travis/alexperrault/passport-trakt.svg?style=flat)](http://travis-ci.org/alexperrault/passport-trakt)
+[![npm version](https://img.shields.io/npm/v/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
+[![license](https://img.shields.io/npm/l/passport-trakt.svg?style=flat)](http://opensource.org/licenses/MIT)
+[![dependency status](https://img.shields.io/david/alexperrault/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
+[![devDependency status](https://img.shields.io/david/dev/alexperrault/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
+
 This module lets you authenticate using Trakt in your Node.js applications.
 By plugging into Passport, Trakt authentication can be easily and
 unobtrusively integrated into any application or framework that supports
@@ -60,8 +66,6 @@ For a complete, working example, refer to the [login example](https://github.com
 
     $ npm install --dev
     $ make test
-
-[![Build Status](https://secure.travis-ci.org/alexperrault/passport-trakt.png)](http://travis-ci.org/alexperrault/passport-trakt)
 
 ## Credits
 
