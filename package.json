@@ -1,6 +1,6 @@
 {
   "name": "passport-trakt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Trakt authentication strategy for Passport.",
   "keywords": [
     "passport",
@@ -35,8 +35,8 @@
     "passport-oauth2": "1.x.x"
   },
   "devDependencies": {
-    "mocha": "1.x.x",
-    "chai": "1.x.x"
+    "mocha": "2.x.x",
+    "chai": "2.x.x"
   },
   "engines": {
     "node": ">= 0.4.0"
