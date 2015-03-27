@@ -11,6 +11,6 @@
     "express": "2.5.8",
     "ejs": ">= 0.0.0",
     "passport": ">= 0.0.0",
-    "passport-trakt": ">= 0.0.0"
+    "passport-trakt": "1.0.x"
   }
 }
