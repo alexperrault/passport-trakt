@@ -1,11 +1,10 @@
 var express = require('express')
   , fs = require('fs')
   , passport = require('passport')
-  , util = require('util')
   , TraktStrategy = require('passport-trakt').Strategy;
 
-var TRAKT_CLIENT_ID = "--my-client-id--"
-var TRAKT_CLIENT_SECRET = "--my-client-secret--";
+var TRAKT_CLIENT_ID = '--my-client-id--';
+var TRAKT_CLIENT_SECRET = '--my-client-secret--';
 
 
 // Passport session setup.
@@ -31,7 +30,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new TraktStrategy({
     clientID: TRAKT_CLIENT_ID,
     clientSecret: TRAKT_CLIENT_SECRET,
-    callbackURL: "https://127.0.0.1:3000/auth/trakt/callback"
+    callbackURL: 'https://127.0.0.1:3000/auth/trakt/callback'
   },
   function(accessToken, refreshToken, params, profile, done) {
     // asynchronous verification, for effect...
@@ -45,6 +44,16 @@ passport.use(new TraktStrategy({
     });
   }
 ));
+
+// Simple route middleware to ensure user is authenticated.
+//   Use this route middleware on any resource that needs to be protected.  If
+//   the request is authenticated (typically via a persistent login session),
+//   the request will proceed.  Otherwise, the user will be redirected to the
+//   login page.
+function ensureAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) { return next(); }
+  res.redirect('/login');
+}
 
 // Trakt only support HTTPS callback URL.
 // Need to provide key and certificate to create the server.
@@ -114,14 +123,3 @@ app.get('/logout', function(req, res){
 });
 
 app.listen(3000);
-
-
-// Simple route middleware to ensure user is authenticated.
-//   Use this route middleware on any resource that needs to be protected.  If
-//   the request is authenticated (typically via a persistent login session),
-//   the request will proceed.  Otherwise, the user will be redirected to the
-//   login page.
-function ensureAuthenticated(req, res, next) {
-  if (req.isAuthenticated()) { return next(); }
-  res.redirect('/login')
-}
