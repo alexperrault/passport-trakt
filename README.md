@@ -73,7 +73,7 @@ For a complete, working example, refer to the [login example](https://github.com
 
 ## License
 
-[The MIT License](http://opensource.org/licenses/MIT)
+[The MIT License](https://github.com/alexperrault/passport-trakt/blob/master/LICENSE)
 
 Copyright (c) 2015 Alexandre Perrault <[http://www.perrau.lt/](http://www.perrau.lt/)>
 
