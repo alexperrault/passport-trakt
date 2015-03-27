@@ -70,5 +70,46 @@ describe('Strategy#userProfile', function() {
       expect(profile).to.be.undefined;
     });
   });
+
+});
+
+describe('Strategy#userProfile', function() {
+    
+  var strategy =  new TraktStrategy({
+      clientID: 'ABC123',
+      clientSecret: 'secret'
+    },
+    function() {});
+
+  // mock
+  strategy._oauth2.get = function(url, accessToken, callback) {
+    if (url != 'https://api.trakt.tv/users/me') { return callback(new Error('wrong url argument')); }
+    if (accessToken != 'token') { return callback(new Error('wrong token argument')); }
+    
+    var body = '{ "error";"," in", the:" bo",dy" }';
   
+    callback(null, body, undefined);
+  };
+
+  describe('encountering an error during parsing', function() {
+    var err, profile;
+    
+    before(function(done) {
+      strategy.userProfile('token', function(e, p) {
+        err = e;
+        profile = p;
+        done();
+      });
+    });
+    
+    it('should error', function() {
+      expect(err).to.be.an.instanceOf(Error);
+      expect(err.constructor.name).to.equal('Error');
+      expect(err.message).to.equal('Failed to parse user profile');
+    });
+    
+    it('should not load profile', function() {
+      expect(profile).to.be.undefined;
+    });
+  });
 });
