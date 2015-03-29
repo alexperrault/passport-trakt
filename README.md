@@ -11,6 +11,8 @@ using the OAuth 2.0 API.
 [![dependency status](https://img.shields.io/david/alexperrault/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
 [![devDependency status](https://img.shields.io/david/dev/alexperrault/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
 
+[![npm install](https://nodei.co/npm/passport-trakt.png)](https://www.npmjs.com/package/passport-trakt)
+
 This module lets you authenticate using Trakt in your Node.js applications.
 By plugging into Passport, Trakt authentication can be easily and
 unobtrusively integrated into any application or framework that supports
