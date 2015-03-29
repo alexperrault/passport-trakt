@@ -3,13 +3,13 @@
 [Passport](http://passportjs.org/) strategy for authenticating with [Trakt](http://trakt.tv/)
 using the OAuth 2.0 API.
 
-[![build status](https://img.shields.io/travis/alexperrault/passport-trakt.svg?style=flat)](http://travis-ci.org/alexperrault/passport-trakt)
-[![coverage status](https://img.shields.io/coveralls/alexperrault/passport-trakt.svg?style=flat)](https://coveralls.io/r/alexperrault/passport-trakt)
-[![quality](https://img.shields.io/codeclimate/github/alexperrault/passport-trakt.svg?style=flat)](https://codeclimate.com/github/alexperrault/passport-trakt)
-[![npm version](https://img.shields.io/npm/v/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
-[![license](https://img.shields.io/npm/l/passport-trakt.svg?style=flat)](http://opensource.org/licenses/MIT)
-[![dependency status](https://img.shields.io/david/alexperrault/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
-[![devDependency status](https://img.shields.io/david/dev/alexperrault/passport-trakt.svg?style=flat)](https://www.npmjs.com/package/passport-trakt)
+[![build status](https://img.shields.io/travis/alexperrault/passport-trakt.svg?style=flat-square)](http://travis-ci.org/alexperrault/passport-trakt)
+[![coverage status](https://img.shields.io/coveralls/alexperrault/passport-trakt.svg?style=flat-square)](https://coveralls.io/r/alexperrault/passport-trakt)
+[![quality](https://img.shields.io/codeclimate/github/alexperrault/passport-trakt.svg?style=flat-square)](https://codeclimate.com/github/alexperrault/passport-trakt)
+[![npm version](https://img.shields.io/npm/v/passport-trakt.svg?style=flat-square)](https://www.npmjs.com/package/passport-trakt)
+[![license](https://img.shields.io/npm/l/passport-trakt.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![dependency status](https://img.shields.io/david/alexperrault/passport-trakt.svg?style=flat-square)](https://www.npmjs.com/package/passport-trakt)
+[![devDependency status](https://img.shields.io/david/dev/alexperrault/passport-trakt.svg?style=flat-square)](https://www.npmjs.com/package/passport-trakt)
 
 [![npm install](https://nodei.co/npm/passport-trakt.png)](https://www.npmjs.com/package/passport-trakt)
 
