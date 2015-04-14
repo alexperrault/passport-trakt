@@ -1,6 +1,5 @@
 var express = require('express')
   , app = express()
-  , http = require('http')
   , https = require('https')
   , fs = require('fs')
   , logger = require('express-logger')
@@ -128,5 +127,4 @@ var options = {
   cert: fs.readFileSync('test/test.cert.pem')
 };
 
-http.createServer(app).listen(3001);
 https.createServer(options, app).listen(3000);
